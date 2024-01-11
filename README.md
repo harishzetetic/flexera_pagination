@@ -53,3 +53,7 @@ Unit tests for the App component are provided in the __tests__ directory. Run th
 
 ```bash
    npm test
+
+## Author
+###Harish Sharma
+GitHub: Your GitHub Profile
