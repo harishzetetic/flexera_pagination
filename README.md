@@ -1,46 +1,33 @@
-# Getting Started with Create React App
+# Flexera Pagination App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+Flexera Pagination App is a React application designed to search and display GitHub repositories using the GitHub API. The app allows users to navigate through paginated results, view repository details, and persist their selections even after refreshing the page.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+1. **GitHub Repository Search:** The app fetches repository data from the GitHub API based on the provided page number and maximum number of records.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+2. **Pagination:** Users can navigate through the search results using the Next and Previous buttons. The app dynamically updates the UI based on the selected page.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+3. **Persistent Selections:** Selected repository IDs are stored in both the local storage and the app's state. This ensures that user selections persist even after a page refresh.
 
-### `npm test`
+4. **Detailed Repository Cards:** Each repository is presented in a card format, displaying the author's profile photo, full name, and description.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+5. **Navigation Controls:** The button container includes Previous and Next buttons, along with information about the current page and the total number of records. The Previous button is disabled on the first page, and the Next button is disabled on the last page.
 
-### `npm run build`
+6. **Footer with Author Information:** The footer displays the author's GitHub profile photo, name, and a link to their GitHub profile. This information is fetched from the GitHub API.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Technologies Used
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **React:** The app is built using the React library for creating a dynamic and efficient user interface.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **GitHub API:** The GitHub API is utilized to fetch repository data and author information.
 
-### `npm run eject`
+- **CSS:** Custom CSS styles are implemented to design the UI from scratch.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Installation
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. Clone the repository to your local machine.
+   ```bash
+   git clone https://github.com/yourusername/flexera-pagination-app.git
