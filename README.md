@@ -48,10 +48,13 @@ Flexera Pagination App is a React application designed to search and display Git
    ```bash
    Open your browser and visit [http://localhost:3000](http://localhost:3000) to view the app.
 
-## Unit Testing
+## Running Tests
 
 Unit tests for the App component are provided in the __tests__ directory. Run the tests using the following command:
-    npm run test
+
+```bash
+npm test
+
 
 ## Author
 
