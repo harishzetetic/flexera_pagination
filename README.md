@@ -31,3 +31,25 @@ Flexera Pagination App is a React application designed to search and display Git
 1. Clone the repository to your local machine.
    ```bash
    git clone https://github.com/yourusername/flexera-pagination-app.git
+
+2. Navigate to the project directory.
+   ```bash
+   cd flexera-pagination-app
+
+3. Install dependencies.
+   ```bash
+   npm install
+
+4. Start the development server.
+   ```bash
+   npm start
+
+5. Start the development server.
+   ```bash
+   Open your browser and visit http://localhost:3000 to view the app.
+
+## Unit Testing
+Unit tests for the App component are provided in the __tests__ directory. Run the tests using the following command:
+
+```bash
+   npm test
