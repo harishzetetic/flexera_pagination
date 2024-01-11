@@ -25,7 +25,7 @@ const ChangePageButton = (props:IChangePageButton) => {
       return (currentPage === calculateLastPage(totalPage) ? 'disabled' : '')
     }
   
-    return <div className={`button ${type === 'prev' ? isPrevPageDisabled() : isNextPageDisabled()}`} onClick={changePage}>{icon}</div>
+    return <div className={`button ${type === 'prev' ? isPrevPageDisabled() : isNextPageDisabled()}`} onClick={changePage} role={type}>{icon}</div>
   }
 
   export default ChangePageButton
