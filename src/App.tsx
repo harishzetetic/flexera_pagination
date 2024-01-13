@@ -22,10 +22,10 @@ function App() {
       try {
         const data = await fetchData(currentPage);
         data?.total_count && setData(data)
-        setIsLoading(false)
       } catch (e) {
-        setIsLoading(false)
         console.error('There are some error while fetching repos', e)
+      } finally {
+        setIsLoading(false)
       }
 
     }
@@ -46,7 +46,7 @@ function App() {
 
   return (<>
     <div className="container">
-      <h1 className='page_title'><span className='highlight'>Flexera</span> Pagination App</h1>
+      <h1 className='page_title'><span className='highlight'>Example</span> Pagination App</h1>
 
       {isLoading && <h3>Loading... Please Wait</h3>}
       {!isLoading && data && <>
